@@ -16,6 +16,7 @@
             "outputPath": "dist/luxory-barber",
             "index": "src/index.html",
             "browser": "src/main.ts",
+            "baseHref": "/luxory-baerber/",
             "polyfills": [
               "zone.js"
             ],
