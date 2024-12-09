@@ -1,0 +1,20 @@
+<section class="barbers-section">
+    <h2>Nuestros Barberos</h2>
+    <div class="barbers-container">
+        <div class="barber-card" *ngFor="let barber of barbers">
+            <div class="barber-image">
+                <img [src]="barber.image" [alt]="barber.name" />
+            </div>
+            <div class="barber-info">
+                <h3>{{ barber.name }}</h3>
+                <p>{{ barber.description }}</p>
+                <a
+                    [href]="barber.booksyUrl"
+                    target="_blank"
+                    class="btn-appointment">
+                    Reservar cita
+                </a>
+            </div>
+        </div>
+    </div>
+</section>

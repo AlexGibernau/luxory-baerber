@@ -1,0 +1,30 @@
+<section class="contact-section">
+    <h2>Contacto</h2>
+    <div class="contact-container">
+        <div class="contact-card">
+            <div class="contact-item">
+                <i class="fas fa-envelope"></i>
+                <h3>Email</h3>
+                <a [href]="'mailto:' + contactInfo.email">{{
+                    contactInfo.email
+                }}</a>
+            </div>
+
+            <div class="contact-item">
+                <i class="fas fa-phone"></i>
+                <h3>Teléfono</h3>
+                <a [href]="'tel:' + contactInfo.phone">{{
+                    contactInfo.phone
+                }}</a>
+            </div>
+
+            <div class="contact-item">
+                <i class="fab fa-instagram"></i>
+                <h3>Instagram</h3>
+                <a [href]="contactInfo.instagram" target="_blank"
+                    >luxorybarber</a
+                >
+            </div>
+        </div>
+    </div>
+</section>

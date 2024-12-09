@@ -1,0 +1,83 @@
+:root {
+    /* Paleta de colores principal */
+    --primary-white: #ffffff;
+    --primary-black: #1a1a1a;
+    --primary-gold: #9c8035;
+    --secondary-gold: #c5a572;
+
+    /* Grises */
+    --gray-light: #f5f5f5;
+    --gray-medium: #e0e0e0;
+
+    /* Sombras */
+    --shadow-sm: 0 2px 4px rgba(0, 0, 0, 0.1);
+    --shadow-md: 0 4px 6px rgba(0, 0, 0, 0.1);
+
+    /* Transiciones */
+    --transition-default: all 0.3s ease;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
+    font-family: 'Helvetica Neue', Arial, sans-serif;
+    color: var(--primary-black);
+    background-color: var(--primary-white);
+    background-image: url('/assets/images/Logo_removed.png');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-attachment: fixed;
+    background-size: 50%;
+    position: relative;
+}
+
+body::before {
+    content: '';
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(255, 255, 255, 0.9);
+    z-index: -1;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+/* Estilos generales de botones */
+.btn {
+    padding: 0.8rem 1.5rem;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: var(--transition-default);
+}
+
+.btn-primary {
+    background-color: var(--primary-gold);
+    color: var(--primary-white);
+}
+
+.btn-primary:hover {
+    background-color: var(--secondary-gold);
+}
+
+main {
+    padding-top: 80px;
+    display: flex;
+    flex-direction: column;
+    gap: 0;
+    position: relative;
+    z-index: 1;
+}
+
+section {
+    min-height: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 2rem;
+}
