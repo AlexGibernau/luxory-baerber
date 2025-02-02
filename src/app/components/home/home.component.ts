@@ -29,7 +29,7 @@ export class HomeComponent {
         {
             id: 2,
             name: 'Savy',
-            image: 'assets/images/Savy.png',
+            image: 'assets/images/barbero_01.jpg',
             description: 'Experto en barbas y estilos clásicos',
             booksyUrl:
                 'https://booksy.com/es-es/91107_luxory-barber_barberia_49332_cerdanyola-del-valles/staffer/153928#ba_s=seo',
